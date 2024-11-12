@@ -46,6 +46,9 @@ class GestorTareasGUI:
         style.configure("TButton", background="#5DADE2", foreground="black", font=("Arial", 10, "bold"))
         style.map("TButton", background=[("active", "#3498DB")])
 
+        # Configurar cierre de ventana con confirmación
+        self.root.protocol("WM_DELETE_WINDOW", self.confirmar_salida)
+
         # Marco principal
         self.frame = ttk.Frame(root, padding="10")
         self.frame.grid(row=0, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
@@ -90,6 +93,10 @@ class GestorTareasGUI:
 
         # Actualizar lista inicial
         self.actualizar_lista()
+
+    def confirmar_salida(self):
+        if messagebox.askokcancel("Salir", "¿Estás seguro de que deseas salir de la aplicación?"):
+            self.root.destroy()
 
     def agregar_tarea(self):
         titulo = self.titulo_entry.get()
