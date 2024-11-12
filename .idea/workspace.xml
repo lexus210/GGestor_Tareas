@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e9b871a-151a-4f91-802f-b1d2365db2a5" name="Changes" comment="Correción gestor_tareas.py">
-      <change afterPath="$PROJECT_DIR$/src/vista/gestor_tareas_GUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_gestor_tareas.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gestor_tareas.py" afterDir="false" />
-    </list>
+    <list default="true" id="6e9b871a-151a-4f91-802f-b1d2365db2a5" name="Changes" comment="gestor_tareas_GUI.py v2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,14 +116,32 @@
       <option name="project" value="LOCAL" />
       <updated>1731370088842</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="gestor_tareas_GUI.py v1">
+      <option name="closed" value="true" />
+      <created>1731371029952</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731371029952</updated>
+    </task>
+    <task id="LOCAL-00005" summary="gestor_tareas_GUI.py v2">
+      <option name="closed" value="true" />
+      <created>1731371099227</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731371099227</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inicio del proyecto" />
     <MESSAGE value="Se agrega gitignore" />
     <MESSAGE value="Correción gestor_tareas.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correción gestor_tareas.py" />
+    <MESSAGE value="gestor_tareas_GUI.py v1" />
+    <MESSAGE value="gestor_tareas_GUI.py v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="gestor_tareas_GUI.py v2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
