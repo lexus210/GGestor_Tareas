@@ -1,5 +1,5 @@
 import unittest
-from src.logica.gestor_tareas import GestorTareas
+from src.logica.gestor_tareas import GestorTareas, Tarea
 
 class TestGestorTareas(unittest.TestCase):
     def setUp(self):
