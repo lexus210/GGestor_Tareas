@@ -7,6 +7,7 @@ class Tarea:
         self.titulo = titulo
         self.descripcion = descripcion
         self.completada = False
+
 class GestorTareas:
     def __init__(self):
         self.tareas = []
@@ -37,7 +38,6 @@ class GestorTareasApp:
         self.gestor = gestor
         self.root = root
         self.root.title("Gestor de Tareas")
-        self.root.geometry("500x400")
         self.root.style = ttk.Style("darkly")  # Cambia el tema aquí
 
         # Título y descripción de tarea
@@ -71,12 +71,17 @@ class GestorTareasApp:
         ttk.Label(root, text="Descripción de la Tarea Seleccionada:", font=("Helvetica", 12)).pack(pady=5)
         self.descripcion_text = tk.Text(root, height=4, font=("Helvetica", 10), wrap="word", state="disabled")
         self.descripcion_text.pack(fill=tk.X, padx=10, pady=5)
-
-        # Botón para marcar como completada
+# Botón para marcar como completada
         ttk.Button(root, text="Marcar como Completada", command=self.marcar_completada, bootstyle="success-outline").pack(pady=5)
 
         # Configurar cierre de ventana con confirmación
         self.root.protocol("WM_DELETE_WINDOW", self.confirmar_salida)
+
+        # Actualizar tamaño de la ventana
+        self.root.update_idletasks()  # Asegura que todos los widgets están cargados
+        width = self.root.winfo_width()
+        height = self.root.winfo_height()
+        self.root.minsize(width, height)  # Establece el tamaño mínimo de la ventana
 
     def confirmar_salida(self):
         if messagebox.askokcancel("Salir", "¿Estás seguro de que deseas salir de la aplicación?"):
@@ -130,13 +135,11 @@ class GestorTareasApp:
         else:
             messagebox.showwarning("Advertencia", "Selecciona una tarea para eliminar")
 
-
 def run():
     root = tk.Tk()
     gestor = GestorTareas()
     app = GestorTareasApp(root, gestor)
     root.mainloop()
-
 
 if __name__ == "__main__":
     run()
